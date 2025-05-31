@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marva - Python Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/profile.png" />
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "zLp1obj0Yc5YK1xM5",
+          });
+       })();
+    </script>
+    
+    </head>
+    <body>
+    <div class="main" id="m2">
+        <div class="home">
+            <div class="navbar" id="nav"id="home">
+                <div class="logo">portfolio</div>
+                <div class="nav" id="navMenu">
+                    <a href="#m2">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skill">Skill</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="homecontent" id="m1">
+                <span>Hi, I'm <span class="name">Marva</span><br>
+                <span class="name">Python</span> Developer<br>
+                I build clean, scalable backends.</span>
+            </div>
+        </div>
+
+       
+        <section id="about" class="about">
+            <h1 class="headings">about <span class="me">me</span></h1>
+            <div class="mainabout">
+                <div class="aboutcont">
+                    <p>Hi, I'm Marva, a passionate Python Developer with a strong foundation in computer science. Currently pursuing my B.Sc. in Computer Science from Calicut University (Graduating in 2025), I have a deep interest in the world of programming and backend development.</p>
+                    <br>
+                    <p>Although I'm a fresher, I've spent countless hours honing my skills in Python, solving coding challenges, and building logic-driven solutions. My love for problem-solving and clean code drives me to continuously learn and grow in the ever-evolving tech world.</p>
+                    <br>
+                    <p>I'm excited to take the next step and apply my knowledge in real-world projects that create impact.</p>
+                </div>
+                <div class="aboutimg">
+                    <img src="ME.jpeg" alt="Marva" class="image">
+                </div>
+            </div>
+        </section>
+
+     
+        <section id="skill" class="skill">
+            <div class="headings">
+                <h1>MY <span class="me">skills</span></h1>
+            </div>
+
+            <div class="skills-flex">
+                <div class="skill-card">
+                    <div class="skill-title">HTML <span>85%</span></div>
+                    <p>I create clean, well-structured, and semantic HTML layouts that ensure accessibility and cross-browser compatibility.</p>
+                    <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">CSS <span>75%</span></div>
+                    <p>I design responsive, visually appealing layouts using modern CSS techniques like Flexbox, Grid, and custom animations.</p>
+                    <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">JavaScript <span>90%</span></div>
+                    <p>I build dynamic and interactive user experiences using core JavaScript, handling logic, DOM manipulation, and events.</p>
+                    <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">Python <span>75%</span></div>
+                    <p>I write clean and efficient Python code for scripting, automation, and backend logic in web and software development.</p>
+                    <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">React <span>70%</span></div>
+                    <p>I develop modern, component-based user interfaces using React, managing state and creating reusable components.</p>
+                    <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-title">React <span>80%</span></div>
+                    <p>I develop modern, component-based user interfaces using React, managing state and creating reusable components.</p>
+                    <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="project" class="project">
+            <h1 class="headings">my <span class="me">projects</span></h1>
+            <div class="projbox">
+                <div class="proj1">
+                    <img src="/trip1.png" alt="EaseMyTrip clone" class="projimg">
+                    <span class="projhead">EaseMyTrip Clone Webpage</span>
+                </div>
+                <div class="proj1">
+                    <img src="/aura.jpeg" alt="AuraChef website" class="projimg2">
+                    <span class="projhead">AuraChef Website</span>
+                </div>
+                <div class="proj1">
+                    <img src="/utube1.png" alt="YouTube clone" class="projimg2">
+                    <span class="projhead">YouTube Clone Webpage</span>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="contact" class="contact">
+            <h1 class="headings">Contact <span class="me">Me</span></h1>
+            <div class="contactbox">
+                <form>
+                    <input type="text" placeholder="Your Name" class="box" id="fullName" required><br>
+                    <input type="email" placeholder="Your Email" id="Email_id" required class="box"><br>
+                    <textarea placeholder="Your Message" id="Message" class="box"></textarea><br>
+                    <button onclick="sendMail()" class="msgbtn" type="button">Message Me</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
